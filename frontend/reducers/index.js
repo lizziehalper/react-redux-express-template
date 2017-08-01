@@ -9,6 +9,7 @@ const reducer = (state = {}, action) => {
     let newState = Object.assign({}, state);
     switch (action.type) {
         case 'LOGIN':
+            console.log('login triggered');
             newState.user = action.user;
             newState.token = action.token;
         default:

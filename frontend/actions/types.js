@@ -1,10 +1,9 @@
 /* Action types */
-const login = (user, token, refresh) => {
+const login = (user, token) => {
   return {
     type: 'LOGIN',
     user: user,
-    token: token,
-    refresh: refresh
+    token: token
   };
 };
 

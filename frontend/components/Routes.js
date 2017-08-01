@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Router, Redirect, Route } from 'react-router';
 import AppContainer from '../containers/AppContainer';
 import App from './App';
-import Login from '../containers/Login';
+import LoginPage from '../containers/Login';
 import Writers from './Writers';
 
 class Routes extends Component {
@@ -11,7 +11,7 @@ class Routes extends Component {
             <App>
                 <Switch>
                     <Route exact path='/' component={AppContainer}/>
-                    <Route path='/students' component={Login}/>
+                    <Route path='/login' component={LoginPage}/>
                     <Route path='/writers' component={Writers}/>
                 </Switch>
             </App>
